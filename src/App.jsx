@@ -1,19 +1,20 @@
-
-import './App.css'
-import Counter from './components/Count/Counter'
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import Sign from "./components/Sign/Sign";
 
 function App() {
-
   return (
     <>
-    <Counter/>
-      <Header/>
-      <Footer/>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/sign" element={<Sign />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
-//Глобальное добавляет 
+export default App;
+//Глобальное добавляет

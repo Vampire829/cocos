@@ -25,12 +25,16 @@
 .social a {
   text-decoration: none;
 }
-.links h1:hover {
+.links a:hover {
   color: bisque;
   font-size: 70px;
 }
-.links h1 {
+.links a {
   transition: 0.3s;
+  font-weight: 600;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
 }
 
 .text {
