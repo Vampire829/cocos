@@ -1,0 +1,11 @@
+.footer{
+    background-image: url("ffffon.jpg");
+    display: block;
+    text-align: center;
+    border: 2px solid burlywood; 
+    min-height: 100px;
+    margin: 0 auto;
+}
+.footer t{
+    text-align: center;
+}

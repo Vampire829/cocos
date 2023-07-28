@@ -4,9 +4,10 @@ import styles from "../Header/Header.module.css"
 import vk from  "../../../public/free-icon-vk-logo-of-social-network-39699.png"
 import inst from "../../../public/free-icon-instagram-1384031.png"
 import teleg from "../../../public/free-icon-telegram-logo-87413.png"
+
 const Header = () => {
- 
   return (
+    <>
     <header>
     <div className={styles.main}>
         <div className={styles.logo} >
@@ -17,7 +18,7 @@ const Header = () => {
         </div>
         <div className={styles.social}>
             <a href=""> <img src={vk} alt=""/></a>
-            <a href=""> <img src={inst} alt="" /></a>
+            <a href=""> <img src={inst} alt=""/></a>
             <a href=""> <img src={teleg} alt="" /></a>
         </div>
     </div>
@@ -46,10 +47,12 @@ const Header = () => {
          Их мякоть, молоко, масло и стружка служат основой для множества блюд, напитков и косметических средств.</t>
       <t><b>3</b>Благотворные свойства: Кокосы богаты питательными веществами и имеют ряд благотворных свойств для здоровья. 
         Они содержат полезные жиры, минералы (такие как калий и магний), витамины (включая витамин С, Е и группу В) и антиоксиданты.</t>
-      <t><b>4</b>Водный и молочный напитки: Кокосовая вода, которая находится внутри зрелого ореха, является освежающим и натуральным напитком. Она богата электролитами и используется для увлажнения и восстановления организма.</t>
+      <t className={styles.textend}><b>4</b>Водный и молочный напитки: Кокосовая вода, которая находится внутри зрелого ореха, является освежающим и натуральным напитком. Она богата электролитами и используется для увлажнения и восстановления организма.</t>
       </div>
     </main>
+    
     </header>
+    </>
   )
 }
 
